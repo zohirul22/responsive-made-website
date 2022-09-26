@@ -8,7 +8,7 @@ const Service = ({ service }) => {
 
     const handelAddToCart =(id)=>{
         // navigate(`/service/${id}`)
-        navigate(`/service/${id}`)
+        navigate(`/service/ ${id}`)
     }
 
     return (

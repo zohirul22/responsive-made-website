@@ -9,6 +9,7 @@ import DetailsPage from './Pages/Home/DetailsPage/DetailsPage';
 import Service from './Pages/Home/Service/Service';
 import Experts from './Pages/Home/Experts/Experts';
 import Login from './Pages/Home/Login/Login';
+import NotFound from './Pages/Home/NotFound/NotFound';
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
         <Route path='/service' element={<Service></Service>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/service/:serviceId' element={<DetailsPage></DetailsPage>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+
       <Footer></Footer>
     </div>
   );
